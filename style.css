@@ -1,0 +1,141 @@
+body {
+    margin: 0 0;
+    font-family: 'Roboto';
+}
+
+/* Color palette */
+:root {
+    --dark_bluegrey: #383F51;
+    --light_purple: #DDDBF1;
+    --dark_blue: #3C4F76;
+    --light_blue: #C4D7F2;
+    --blue: #306BAC;
+    --grey: #F0F0F0;
+}
+
+.main_wrapper {
+    width: 100%;
+    top: 0px;
+    bottom: 0px;
+    margin: 0;
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: 30% auto;
+    grid-template-rows: 120px auto auto;
+}
+
+ /* ========= HEADER ================= */
+
+.header {
+    background-color: var(--dark_bluegrey);
+    grid-column: 1/3;
+}
+
+.header h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    color: white;
+}
+
+ /* ========= HOME ================= */
+
+.home {
+    display: flex;
+    grid-column: 2/3;
+    background-color: var(--grey);
+}
+
+.picture {
+    display: block;
+    background-color: var(--dark_blue);
+
+    width: 1000;
+    height: 600;
+}
+
+ /* ========= SIDE ================= */
+
+.artist_info {
+    background-color: var(--grey);
+    grid-column: 1;
+    grid-row: 2;
+}
+
+.artist_info h3 {
+    font-size: 30px;
+    text-align: center;
+}
+
+.artist_info p {
+    font-size: 20px;
+    margin: 10 10;
+}
+
+ /* ========= FOOTER ================= */
+
+.documentation {
+    background-color: var(--grey);
+    grid-column: 1/3;
+    text-align: center;
+}
+
+.doc_btn {
+    cursor: pointer;
+    color: white;
+    background-color: var(--dark_bluegrey);
+    border: 1px solid var(--dark_bluegrey);
+    width: 25%;
+    margin: 10px auto;
+    text-align: center;
+    padding: 5px 0;
+    font-size: 20px;
+}
+
+.doc_btn:hover {
+    color: black;
+    background: white;
+    border:1px solid var(--dark_bluegrey);
+}
+
+.content {
+    display: none;
+}
+
+.content_holder {
+    display: grid;
+    grid-gap: 1px;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto auto;
+    margin: 10px 10px;
+}
+
+.content_holder p {
+    text-align: left;
+    margin: 10 10;
+    border: 1px solid var(--dark_bluegrey);
+    padding: 10px;
+
+}
+
+.content div {
+    background-color: white;
+}
+
+.css_doc h4 {
+    text-align: left;
+}
+
+ /* ========= SHAPES ================= */
+#sun {
+    cursor: pointer;
+}
+
+.planets {
+    cursor: pointer;
+}
+
+.rays {
+    display: none;
+}
